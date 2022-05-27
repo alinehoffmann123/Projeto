@@ -1,0 +1,19 @@
+create schema loja;
+ CREATE TABLE LOJA.TBCoffee ( 
+    IDCoffee SERIAL NOT NULL, 
+    cofnome VARCHAR (50) NOT NULL,
+    cofpreco varchar money NOT NULL,
+    CONSTRAINT PK_TBCoffee 
+    PRIMARY KEY (IDCoffee) 
+);
+
+insert into LOJA.TBCoffee (cofnome,cofpreco)
+values (' Baggio Café', 19.94);
+insert into LOJA.TBCoffee (cofnome,cofpreco)
+values ('Café Bravo', 21.00);
+insert into LOJA.TBCoffee (cofnome,cofpreco)
+values ('Cafe Santa Monica', 71.94);
+insert into LOJA.TBCoffee (cofnome,cofpreco)
+values ('Caproni Almond', 90.16);
+insert into LOJA.TBCoffee (cofnome,cofpreco)
+values ('Utam Gourmet', 63.90);
